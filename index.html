@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ro-RO" class="no-js">
+
+	<head>
+		<!-- setup -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+		<!-- SEO -->
+		<title>Proiect de layout complex - Cărturești Homepage</title>
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro" />
+		<link rel="canonical" href="https://viorelmocanu.github.io/LayoutComplex/" />
+		<meta property="og:title" content="Proiect de layout complex - Cărturești Homepage" />
+		<meta property="og:description" content="Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro" />
+		<meta property="og:site_name" content="Layout Complex" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="ro_RO" />
+		<meta property="og:url" content="https://viorelmocanu.github.io/LayoutComplex/" />
+		<meta property="og:image" content="./og-image.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Design-ul site-ului Cărturești, refăcut complet de la zero în HTML și CSS." />
+		<meta property="article:publisher" content="https://www.facebook.com/ViorelMocanu.ro/" />
+		<meta property="article:published_time" content="2021-07-04T23:27:55+03:00" />
+		<meta property="article:modified_time" content="2021-07-04T23:27:57+03:00" />
+		<meta name="twitter:site" content="@ViorelMocanu" />
+		<meta name="twitter:creator" content="@ViorelMocanu" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<!-- design -->
+		<link rel="stylesheet" href="resources/style.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<link rel="manifest" href="./my.webmanifest" />
+		<meta name="apple-mobile-web-app-title" content="Proiect de layout complex" />
+		<meta name="application-name" content="Layout Complex" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- optimize -->
+		<script type="module">
+			document.documentElement.classList.remove('no-js');
+			document.documentElement.classList.add('js');
+		</script>
+		<link rel="preload" href="https://viorelmocanu.github.io/LayoutComplex/resources/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://viorelmocanu.github.io/LayoutComplex/resources/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+	</head>
+
+	<body>
+		<div class="Container">
+			<header class="Header">
+				<a href="#" class="Logo" title="Înapoi la pagina principală Cărturești">
+					<img src="resources/logo-carturesti.svg" alt="Logo-ul Cărturești" class="LogoImage" width="60" height="60" />
+				</a>
+				<form class="SearchForm" action="#" method="get" id="searchForm">
+					<fieldset class="Fieldset">
+						<legend class="Legend ScreenReaders">Caută pe site-ul Cărturești:</legend>
+						<label class="Label SearchLabel">
+							<span class="SearchLabelText ScreenReaders">Introdu textul căutat aici:</span>
+							<input class="Input SearchInput" placeholder="Caută..." type="search" maxlength="200" id="s" name="s" />
+						</label>
+						<button class="SubmitButton SearchSubmit" type="submit">
+							<img src="resources/icon-search.svg" class="SearchSubmitImage" alt="Caută în Cărturești acum" width="24" height="24" />
+						</button>
+					</fieldset>
+				</form>
+				<a href="#" class="TriggerButton CartTrigger">
+					<img src="resources/icon-cart.svg" alt="Vezi coșul tău de cumpărături" class="TriggerImage CartTriggerImage" width="32" height="32" />
+				</a>
+				<button class="TriggerButton MenuTrigger" id="menuTrigger">
+					<img src="resources/icon-menu.svg" alt="Deschide meniul principal al site-ului Cărturești" class="TriggerImage MenuTriggerImage" width="32" height="32" />
+				</button>
+				<nav class="MainMenu" id="mainMenu">
+					<ul class="MainMenuList">
+						<li class="MainMenuItem">
+							<a href="#" class="MainMenuLink">Carte</a>
+							<ul class="MainMenuSublist">
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Audibooks</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Culinare</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Artă, arhitectură</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Enciclopedii</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Biografii</a></li>
+							</ul>
+						</li>
+						<li class="MainMenuItem">
+							<a href="#" class="MainMenuLink">Cate străină</a>
+							<ul class="MainMenuSublist">
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Audibooks</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Culinare</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Artă, arhitectură</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Enciclopedii</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Biografii</a></li>
+							</ul>
+						</li>
+						<li class="MainMenuItem">
+							<a href="#" class="MainMenuLink">Școlărești</a>
+							<ul class="MainMenuSublist">
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Grădiniță</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Clasa pregătitoare</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Clasa I</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Clasa a II-a</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Clasa a III-a</a></li>
+							</ul>
+						</li>
+						<li class="MainMenuItem">
+							<a href="#" class="MainMenuLink">Rafturi alese</a>
+							<ul class="MainMenuSublist">
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Raftul cărților ecranizate</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Măști de sezon și alte delicatese</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Raftul Premiilor Gopo</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Raftul Street Delivery</a></li>
+								<li class="MainMenuSubitem"><a href="#" class="MainMenuSublink">Raftul autorilor români</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main class="Main">
+				<section class="Slider">
+					<nav class="SliderControls">
+						<a id="previousSlide" class="SliderArrows SliderPrev" href="#" title="Revino la imaginea precedentă">
+							<img src="resources/icon-arrow.svg" class="SliderArrowImage" alt="Imaginea precedentă" width="48" height="82" />
+						</a>
+						<a id="nextSlide" class="SliderArrows SliderNext" href="#" title="Mergi la imaginea următoare">
+							<img src="resources/icon-arrow.svg" class="SliderArrowImage" alt="Imaginea precedentă" width="48" height="82" />
+						</a>
+						<ol id="sliderPicker" class="SliderPicker">
+							<li class="SliderPickerItem Active">
+								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul 1 - Ticket to Ride Europe">
+									<span class="SliderPickerText">Imaginea 1 - Ticket to Ride Europe</span>
+								</a>
+							</li>
+							<li class="SliderPickerItem">
+								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul 2 - Carcassone">
+									<span class="SliderPickerText">Imaginea 2 - Carcassone</span>
+								</a>
+							</li>
+							<li class="SliderPickerItem">
+								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul 3 - Catlover">
+									<span class="SliderPickerText">Imaginea 3 - Catlover</span>
+								</a>
+							</li>
+						</ol>
+					</nav>
+					<ol id="sliderList" class="SliderList">
+						<li class="SliderItem Active">
+							<a href="#" class="SliderLink" title="Vezi articolul despre Ticket to Ride Europe">
+								<picture class="SliderImage">
+									<source type="image/webp" srcset="./images/slider-img-1.webp" media="(min-width: 750px)" />
+									<source type="image/webp" srcset="./images/slider-img-1-mobile.webp" media="(min-width: 100px)" />
+									<img src="./images/slider-img-1-mobile.png" alt="Imagine despre Ticket to Ride Europe" width="525" height="300" itemprop="image" />
+								</picture>
+							</a>
+						</li>
+						<li class="SliderItem">
+							<a href="#" class="SliderLink" title="Vezi articolul despre Carcassone">
+								<picture class="SliderImage">
+									<source type="image/webp" srcset="./images/slider-img-2.webp" media="(min-width: 750px)" />
+									<source type="image/webp" srcset="./images/slider-img-2-mobile.webp" media="(min-width: 100px)" />
+									<img src="./images/slider-img-2-mobile.jpg" alt="Imagine despre Carcassone" width="525" height="300" itemprop="image" />
+								</picture>
+							</a>
+						</li>
+						<li class="SliderItem">
+							<a href="#" class="SliderLink" title="Vezi articolul despre Catlover">
+								<picture class="SliderImage">
+									<source type="image/webp" srcset="./images/slider-img-3.webp" media="(min-width: 750px)" />
+									<source type="image/webp" srcset="./images/slider-img-3-mobile.webp" media="(min-width: 100px)" />
+									<img src="./images/slider-img-3-mobile.jpg" alt="Imagine despre Catlover" width="525" height="300" itemprop="image" />
+								</picture>
+							</a>
+						</li>
+					</ol>
+				</section>
+				<section class="Features">
+					<h2 class="FeaturesTitle">De ce să cumperi de la Cărturești?</h2>
+					<ul class="FeaturedList">
+						<li class="FeaturedItem">
+							<img src="resources/icon-package.svg" width="100" height="100" alt="La Cărturești ai împachetare gratuită!" />
+							<h3 class="FeaturedItemTitle">Împachetare gratuită</h3>
+							<p class="FeaturedParagraph">Vrei să faci un cadou? Ți-l împachetăm gratuit!</p>
+						</li>
+						<li class="FeaturedItem">
+							<img src="resources/icon-delivery.svg" width="100" height="100" alt="La Cărturești ai livrare în 24h oriunde în Calea Lactee!" />
+							<h3 class="FeaturedItemTitle">Livrare în 24h</h3>
+							<p class="FeaturedParagraph">pentru peste 90.000 de produse! <a href="#">Detalii &raquo;</a></p>
+						</li>
+						<li class="FeaturedItem">
+							<img src="resources/icon-pay.svg" width="100" height="100" alt="La Cărturești poți plăti cu carduri culturale!" />
+							<h3 class="FeaturedItemTitle">Plata cu carduri culturale</h3>
+							<p class="FeaturedParagraph"><a href="#">Detalii &raquo;</a></p>
+						</li>
+					</ul>
+					<div class="MainFeature">
+						<img src="resources/icon-gift.svg" width="100" height="100" alt="La Cărturești poți cumpăra vouchere cadou pentru cei dragi!" />
+						<p class="MainFeatureParagraph">Vrei să iei un <strong>voucher cadou</strong> pentru cineva drag ție?</p>
+						<a class="Button" href="#" title="Nu știi ce să-i iei cuiva drag? Alege un voucher cadou de la Cărturești!">
+							<span class="ButtonText">Comandă-l aici &raquo;</span>
+						</a>
+					</div>
+				</section>
+				<section class="BookGrid">
+					<h2 class="BookGridTitle">Precomenzi</h2>
+					<ol class="BookGridList">
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea Information Architecture, 4e" itemprop="url">
+								<picture class="BookGridPicture">
+									<source type="image/webp" srcset="./images/carte.webp" media="(min-width: 100px)" />
+									<img class="BookGridThumbnail" src="images/carte.jpg" width="300" height="451" alt="Coperta cărții Information Architecture, 4e" itemprop="image" />
+								</picture>
+								<h3 class="BookTitle">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span itemprop="price" content="52.00">
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span class="PriceCurrency" itemprop="priceCurrency" content="RON">lei</span>
+									</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
+							</a>
+						</li>
+					</ol>
+				</section>
+			</main>
+			<footer class="Footer">
+				<div class="FooterContainer">
+					<section class="FooterSection FooterLinks">
+						<h2 class="FooterTitle">Linkuri utile</h2>
+						<ul class="FooterLinksList">
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Citește mai multe despre site-ul Cărturești.ro">Despre Cărturești.ro</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Află mai multe despre brand-ul Cărturești">Despre Cărturești</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Află dacă avem job-uri disponibile în compania noastră">Joburi</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Beneficiază de asistență la cumpărare">Asistență</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Află cum poți să comanzi cărți cu livrare în cea mai apropiată librărie de tine">Livrare în librărie</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Află care sunt costurile de transport dacă alegi să-ți livrăm acasă">Costuri de transport</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Citește detalii despre politica noastră de confidențialitate">Politica de confidențialitate</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Citește detalii despre politica noastră de retur">Politica de retur</a>
+							</li>
+						</ul>
+					</section>
+					<section class="FooterSection FooterMisc">
+						<h2 class="FooterTitle">Livrare gratuită</h2>
+						<p class="FooterParagraph">pentru comenzi peste 150 de lei dacă toate produsele pot fi livrate într-un singur colet.</p>
+						<h2 class="FooterTitle">Follow us</h2>
+						<ul class="FooterSocialList">
+							<li class="FooterSocialItem">
+								<a class="FooterSocialLink" href="#">
+									<svg viewBox="0 0 24 24">
+										<path fill="rgba(255,255,255,.85)" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+									</svg>
+									<span class="ScreenReaders">Pagina de Facebook a Cărtureștiului</span>
+								</a>
+							</li>
+							<li class="FooterSocialItem">
+								<a class="FooterSocialLink" href="#">
+									<svg viewBox="0 0 24 24">
+										<path fill="rgba(255,255,255,.85)" d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28, 17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
+									</svg>
+									<span class="ScreenReaders">Profilul de Twitter al Cărtureștiului</span>
+								</a>
+							</li>
+							<li class="FooterSocialItem">
+								<a class="FooterSocialLink" href="#">
+									<svg viewBox="0 0 24 24">
+										<path fill="rgba(255,255,255,.85)" d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z"></path>
+									</svg>
+									<span class="ScreenReaders">Canalul de YouTube al Cărtureștiului</span>
+								</a>
+							</li>
+							<li class="FooterSocialItem">
+								<a class="FooterSocialLink" href="#">
+									<svg viewBox="0 0 24 24">
+										<path fill="rgba(255,255,255,.85)" d="M20,6.5A0.5,0.5 0 0,1 19.5,7H17.5A0.5,0.5 0 0,1 17,6.5V4.5A0.5,0.5 0 0,1 17.5,4H19.5A0.5,0.5 0 0,1 20,4.5M4.5,20A0.5,0.5 0 0,1 4,19.5V11H6.09C6.03,11.32 6,11.66 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12C18,11.66 17.96,11.32 17.91, 11H20V19.5A0.5,0.5 0 0,1 19.5,20M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
+									</svg>
+									<span class="ScreenReaders">Profilul de Instagram al Cărtureștiului</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="FooterSection FooterNewsletter">
+						<h2 class="FooterTitle">Abonează-te la newsletter</h2>
+						<p class="FooterParagraph">Primește promoții, noutăți și oferte personalizate direct în Inbox</p>
+						<form class="Form FooterNewsletterForm" id="footerNewsletterForm" action="#" method="post">
+							<fieldset class="Fieldset">
+								<legend class="Legend ScreenReaders">Dă-ne datele tale și promitem că nu-ți dăm prea mult spam:</legend>
+								<label class="Label NewsletterLabel">
+									<span class="NewsletterLabelText">Adresa ta de e-mail:</span>
+									<input class="Input NewsletterInput" placeholder="Introdu mail-ul tău..." type="email" maxlength="200" required="required" id="newsletter-email" name="newsletter-email" />
+								</label>
+								<label class="Label NewsletterLabel">
+									<span class="NewsletterLabelText">Prenumele tău:</span>
+									<input class="Input NewsletterInput" placeholder="Introdu prenumele tău..." type="text" maxlength="200" id="newsletter-firstname" name="newsletter-firstname" />
+								</label>
+								<label class="Label NewsletterLabel">
+									<span class="NewsletterLabelText">Numele tău:</span>
+									<input class="Input NewsletterInput" placeholder="Introdu numele tău..." type="text" maxlength="200" id="newsletter-lastname" name="newsletter-lastname" />
+								</label>
+								<button class="SubmitButton NewsletterSubmit" type="submit">
+									<span>Abonează-te acum &raquo;</span>
+								</button>
+							</fieldset>
+						</form>
+					</section>
+					<section class="FooterSection FooterContact">
+						<h2 class="FooterTitle">Asistență telefonică</h2>
+						<p class="FooterParagraph">Suport comenzi și ofertă online</p>
+						<p class="FooterParagraph">Luni - Vineri: 9:00 - 20:00<br />
+						Sâmbătă - Duminică: 10:00 - 18:00</p>
+						<p class="FooterParagraph">tel.: <a href="tel:0040376448000">0376 448 000</a></p>
+					</section>
+					<section class="FooterSection FooterPayment">
+						<h2 class="FooterTitle">Opțiuni de plată</h2>
+						<p class="FooterParagraph">da, acceptăm bani</p>
+					</section>
+					<section class="FooterSection FooterSecurity">
+						<h2 class="FooterTitle">Shopping securizat</h2>
+						<p class="FooterParagraph">probabil</p>
+					</section>
+					<section class="FooterSection FooterCopy">
+						<ul class="FooterLinksList">
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Citește detalii despre termenii și condițiile de folosire a site-ului">Termeni &amp; condiții</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Citește detalii despre politica de confidențialitate și folosire a cookie-urilor pe site">Politică Cookie-uri</a>
+							</li>
+							<li class="FooterLinksItem">
+								<a class="FooterLink" href="#" title="Mergi pe site-ul ANPC dacă ai nevoie să depui o plângere">ANPC</a>
+							</li>
+						</ul>
+						<p class="FooterParagraph">© Carturesti 2021 | ® Conținut cu drepturi protejate<br /> Acest proiect are pur scop educațional și nu este menit să aducă vreun detriment brand-ului Cărturești sau site-ului <a href="https://www.carturesti.ro">Cărturești.ro</a>.</p>
+					</section>
+				</div>
+			</footer>
+		</div>
+		<script defer src="resources/script.js"></script>
+	</body>
+
+</html>

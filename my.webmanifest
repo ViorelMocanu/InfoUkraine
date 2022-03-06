@@ -1,0 +1,27 @@
+{
+	"name": "ViorelMocanu Layout Complex",
+	"short_name": "Layout Complex",
+	"description": "Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro",
+	"icons": [
+		{
+			"src": "./favicon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "./favicon-192-maskable.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "./favicon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "./index.html",
+	"display": "fullscreen",
+	"theme_color": "#B12A34",
+	"background_color": "#B12A34"
+}
