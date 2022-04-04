@@ -86,8 +86,8 @@ h2 { font-size: 1.25em; line-height: 1.5em;
 	.Aside {  }
 		.AsideTitle {  }
 		.Aside p {  }
-	.Footer {  }
-		.Footer p {  }
+	.Footer { display: block; padding: 1rem; background: white; }
+		.Footer p { margin: 0; }
 
 /**********************************/
 
